@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 
 import AppLogo from '@/components/images/AppLogo.vue';
-import useApp from '@/composables/useApp';
+// import useApp from '@/composables/useApp';
 import useConfig from '@/composables/useConfig';
 import useDarkMode from '@/composables/useDarkMode';
 import { sleep } from '@/lib/utils';
@@ -21,7 +21,7 @@ const emit = defineEmits(['close']);
 const { darkMode, toggleDarkMode } = useDarkMode();
 const { blockNumber } = useWeb3();
 const { networkConfig } = useConfig();
-const { version } = useApp();
+// const { version } = useApp();
 const { t } = useI18n();
 const router = useRouter();
 
@@ -32,9 +32,9 @@ const blockIcon = ref<HTMLDivElement>();
 
 const navLinks = [
   { label: t('gamble'), path: '/' },
-  { label: t('swap'), path: '/trade' },
-  { label: t('futures'), path: '/' },
-  { label: t('nfts'), path: '/' }
+  { label: t('swap'), path: '/swap' },
+  { label: t('futures'), path: '/futures' },
+  { label: t('nfts'), path: '/nfts' }
 ];
 
 const ecosystemLinks = [
@@ -121,11 +121,7 @@ watch(blockNumber, async () => {
       >
         <component :is="link.component" />
       </BalLink>
-      <BalLink
-        href="mailto:lightingcove@gmail.com"
-        class="social-link"
-        noStyle
-      >
+      <BalLink href="mailto:lightingcove@gmail.com" class="social-link" noStyle>
         <EmailIcon />
       </BalLink>
     </div>
@@ -140,17 +136,6 @@ watch(blockNumber, async () => {
           {{ networkConfig.name }}: Block {{ blockNumber }}
         </span>
       </div>
-      <BalLink
-        :href="
-          `https://github.com/lightingcove/frontend-v1/releases/tag/${version}`
-        "
-        class="text-gray-300 flex items-center mt-2"
-        external
-        noStyle
-      >
-        App: v{{ version }}
-        <BalIcon name="arrow-up-right" size="xs" class="ml-1" />
-      </BalLink>
     </div>
   </div>
 </template>

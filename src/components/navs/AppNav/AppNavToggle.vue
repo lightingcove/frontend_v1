@@ -8,17 +8,17 @@
       ]"
       @click="trackGoal(Goals.ClickNavInvest)"
     >
-      {{ $t('invest') }}
+      {{ $t('gamble') }}
     </router-link>
     <router-link
-      :to="{ name: 'trade' }"
+      :to="{ name: 'swap' }"
       :class="[
         'toggle-link px-6 rounded-r-lg',
         { [activeClasses]: isTradePage }
       ]"
       @click="trackGoal(Goals.ClickNavTrade)"
     >
-      {{ $t('trade') }}
+      {{ $t('swap') }}
     </router-link>
   </div>
 </template>

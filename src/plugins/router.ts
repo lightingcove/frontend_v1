@@ -1,27 +1,27 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
-const ClaimPage = () =>
-  import(/* webpackChunkName: "ClaimPage" */ '@/pages/claim.vue');
+// const ClaimPage = () =>
+//   import(/* webpackChunkName: "ClaimPage" */ '@/pages/claim.vue');
 const CookiesPolicyPage = () =>
   import(
     /* webpackChunkName: "CookiesPolicyPage" */ '@/pages/cookies-policy.vue'
   );
-const GetVeBalPage = () =>
-  import(/* webpackChunkName: "GetVeBalPage" */ '@/pages/get-vebal.vue');
+// const GetVeBalPage = () =>
+//   import(/* webpackChunkName: "GetVeBalPage" */ '@/pages/get-vebal.vue');
 const HomePage = () =>
   import(/* webpackChunkName: "HomePage" */ '@/pages/index.vue');
-const PoolPage = () =>
-  import(/* webpackChunkName: "PoolPage" */ '@/pages/pool/_id.vue');
-const CreatePoolPage = () =>
-  import(/* webpackChunkName: "CreatePoolPage" */ '@/pages/pool/create.vue');
-const PoolInvestPage = () =>
-  import(/* webpackChunkName: "PoolInvestPage" */ '@/pages/pool/invest.vue');
-const MigratePoolPage = () =>
-  import(/* webpackChunkName: "MigratePoolPage" */ '@/pages/pool/migrate.vue');
-const PoolWithdrawPage = () =>
-  import(
-    /* webpackChunkName: "PoolWithdrawPage" */ '@/pages/pool/withdraw.vue'
-  );
+// const PoolPage = () =>
+//   import(/* webpackChunkName: "PoolPage" */ '@/pages/pool/_id.vue');
+// const CreatePoolPage = () =>
+//   import(/* webpackChunkName: "CreatePoolPage" */ '@/pages/pool/create.vue');
+// const PoolInvestPage = () =>
+//   import(/* webpackChunkName: "PoolInvestPage" */ '@/pages/pool/invest.vue');
+// const MigratePoolPage = () =>
+//   import(/* webpackChunkName: "MigratePoolPage" */ '@/pages/pool/migrate.vue');
+// const PoolWithdrawPage = () =>
+//   import(
+//     /* webpackChunkName: "PoolWithdrawPage" */ '@/pages/pool/withdraw.vue'
+//   );
 const PrivacyPolicyPage = () =>
   import(
     /* webpackChunkName: "PrivacyPolicyPage" */ '@/pages/privacy-policy.vue'
@@ -29,11 +29,13 @@ const PrivacyPolicyPage = () =>
 const TermsOfUsePage = () =>
   import(/* webpackChunkName: "TermsOfUsePage" */ '@/pages/terms-of-use.vue');
 const TradePage = () =>
-  import(/* webpackChunkName: "TradePage" */ '@/pages/trade.vue');
-const UnlockVeBalPage = () =>
-  import(/* webpackChunkName: "UnlockVeBalPage" */ '@/pages/unlock-vebal.vue');
-const VeBalPage = () =>
-  import(/* webpackChunkName: "VeBalPage" */ '@/pages/vebal.vue');
+  import(/* webpackChunkName: "TradePage" */ '@/pages/swap.vue');
+// const UnlockVeBalPage = () =>
+//   import(/* webpackChunkName: "UnlockVeBalPage" */ '@/pages/unlock-vebal.vue');
+// const VeBalPage = () =>
+//   import(/* webpackChunkName: "VeBalPage" */ '@/pages/vebal.vue');
+const FuturesPage = () => import('@/pages/futures.vue');
+const NFTsPage = () => import('@/pages/nfts.vue');
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -52,8 +54,18 @@ const routes: RouteRecordRaw[] = [
     component: HomePage
   },
   {
+    path: '/futures',
+    name: 'futures',
+    component: FuturesPage
+  },
+  {
+    path: '/nfts',
+    name: 'nfts',
+    component: NFTsPage
+  },
+  {
     path: '/trade/:assetIn?/:assetOut?',
-    name: 'trade',
+    name: 'swap',
     component: TradePage
   },
   {
@@ -62,35 +74,35 @@ const routes: RouteRecordRaw[] = [
       return `/trade${to.path.split('/swap')[1]}`;
     }
   },
-  {
-    path: '/pool/create/:tx?',
-    name: 'create-pool',
-    component: CreatePoolPage,
-    meta: { layout: 'FocusedLayout' }
-  },
-  {
-    path: '/pool/:id',
-    name: 'pool',
-    component: PoolPage
-  },
-  {
-    path: '/pool/:id/invest',
-    name: 'invest',
-    component: PoolInvestPage,
-    meta: { layout: 'PoolTransferLayout' }
-  },
-  {
-    path: '/pool/:id/withdraw',
-    name: 'withdraw',
-    component: PoolWithdrawPage,
-    meta: { layout: 'PoolTransferLayout' }
-  },
-  {
-    path: '/pool/migrate/:from/:to',
-    name: 'migrate-pool',
-    component: MigratePoolPage,
-    meta: { layout: 'FocusedLayout' }
-  },
+  // {
+  //   path: '/pool/create/:tx?',
+  //   name: 'create-pool',
+  //   component: CreatePoolPage,
+  //   meta: { layout: 'FocusedLayout' }
+  // },
+  // {
+  //   path: '/pool/:id',
+  //   name: 'pool',
+  //   component: PoolPage
+  // },
+  // {
+  //   path: '/pool/:id/invest',
+  //   name: 'invest',
+  //   component: PoolInvestPage,
+  //   meta: { layout: 'PoolTransferLayout' }
+  // },
+  // {
+  //   path: '/pool/:id/withdraw',
+  //   name: 'withdraw',
+  //   component: PoolWithdrawPage,
+  //   meta: { layout: 'PoolTransferLayout' }
+  // },
+  // {
+  //   path: '/pool/migrate/:from/:to',
+  //   name: 'migrate-pool',
+  //   component: MigratePoolPage,
+  //   meta: { layout: 'FocusedLayout' }
+  // },
   {
     path: '/terms-of-use',
     name: 'terms-of-use',
@@ -113,29 +125,30 @@ const routes: RouteRecordRaw[] = [
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     redirect: '/'
-  },
-  {
-    path: '/vebal',
-    name: 'vebal',
-    component: VeBalPage
-  },
-  {
-    path: '/get-vebal',
-    name: 'get-vebal',
-    component: GetVeBalPage,
-    meta: { layout: 'FocusedLayout' }
-  },
-  {
-    path: '/unlock',
-    name: 'unlock',
-    component: UnlockVeBalPage,
-    meta: { layout: 'FocusedLayout' }
-  },
-  {
-    path: '/claim',
-    name: 'claim',
-    component: ClaimPage
   }
+  // },
+  // {
+  //   path: '/vebal',
+  //   name: 'vebal',
+  //   component: VeBalPage
+  // },
+  // {
+  //   path: '/get-vebal',
+  //   name: 'get-vebal',
+  //   component: GetVeBalPage,
+  //   meta: { layout: 'FocusedLayout' }
+  // },
+  // {
+  //   path: '/unlock',
+  //   name: 'unlock',
+  //   component: UnlockVeBalPage,
+  //   meta: { layout: 'FocusedLayout' }
+  // },
+  // {
+  //   path: '/claim',
+  //   name: 'claim',
+  //   component: ClaimPage
+  // }
 ];
 
 /**
