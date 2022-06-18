@@ -1,0 +1,21 @@
+{
+  "short_name": "LightingCove",
+  "name": "LightingCove",
+  "description": "Derivative, Prediction, and Swap using LightingCove Protocol",
+  "providedBy": {
+    "name": "Lighting Cove",
+    "url": "https://lightingcove.com"
+  },
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "iconPath": "images/logos/logo512.png",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

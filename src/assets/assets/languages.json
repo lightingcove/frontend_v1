@@ -1,0 +1,235 @@
+{
+	"translation":[
+		{
+			"locale":"en-EN",
+			"gamble":"Gamble",
+			"swap":"Swap",
+			"futures":"Futures",
+			"nfts":"NFTs",
+			"connectwallet":"Connect Wallet",
+			"languages":"Languages",
+			"settings":"Settings",
+			"more":"More"
+		},
+		{
+			"locale":"es-ES",
+			"gamble":"Apostar",
+			"swap":"Intercambio",
+			"futures":"Futuros",
+			"nfts":"NFTs",
+			"connectwallet":"Conectar El Monedero",
+			"languages":"Idiomas",
+			"settings":"Ajustes",
+			"more":"Más"
+		},
+		{
+			"locale":"de-DE",
+			"gamble":"Zocken",
+			"swap":"Tauschen",
+			"futures":"Futures",
+			"nfts":"NFTs",
+			"connectwallet":"Geldbrörse Verbinden",
+			"languages":"Sprachen",
+			"settings":"Einstellungen",
+			"more":"Mehr"
+		},
+		{
+			"locale":"el-EL",
+			"gamble":"Τζόγος",
+			"swap":"Ανταλαγή",
+			"futures":"Μελλοντικά",
+			"nfts":"NFTs",
+			"connectwallet":"συνδεθείτε πορτοφόλι",
+			"languages":"Γλώσσες",
+			"settings":"Ρυθμίσεις",
+			"more":"Περισσότερο"
+		},
+		{
+			"locale":"fi-FI",
+			"gamble":"Uhkapelit",
+			"swap":"Vaihtaa",
+			"futures":"Huomenna",
+			"nfts":"NFTs",
+			"connectwallet":"Yhdistä Lompakko",
+			"languages":"Kieli",
+			"settings":"Asetukset",
+			"more":"Lisää"
+		},
+		{
+			"locale":"fr-FR",
+			"gamble":"Pari",
+			"swap":"Échanger",
+			"futures":"Contracts à Terme",
+			"nfts":"NFTs",
+			"connectwallet":"Connecter Le Portefeuille",
+			"languages":"Langues",
+			"settings":"Réglages",
+			"more":"Suite"
+		},
+		{
+			"locale":"da-DA",
+			"gamble":"Spille",
+			"swap":"Bytte Rundt",
+			"futures":"Futures",
+			"nfts":"NFTs",
+			"connectwallet":"Tilslut Tegnebog",
+			"languages":"Sprog",
+			"settings":"Indstillinger",
+			"more":"Mere"
+		},
+		{
+			"locale":"nl-NL",
+			"gamble":"Gokken",
+			"swap":"Ruil",
+			"futures":"Futures",
+			"nfts":"NFTs",
+			"connectwallet":"Portemonnee Koppelen",
+			"languages":"Talen",
+			"settings":"Instellingen",
+			"more":"Meer"
+		},
+		{
+			"locale":"ar-AR",
+			"gamble":"مغامرة",
+			"swap":"تبديل",
+			"futures":"العقود الآجلة",
+			"nfts":"NFTs",
+			"connectwallet":"ربط المحفظة",
+			"languages":"اللغات",
+			"settings":"إعدادات",
+			"more":"أكثر"
+		},
+		{
+			"locale":"zh-ZH",
+			"gamble":"賭博",
+			"swap":"交換",
+			"futures":"期貨",
+			"nfts":"NFTs",
+			"connectwallet":"連接錢包",
+			"languages":"語言",
+			"settings":"設置",
+			"more":"更多"
+		},
+		{
+			"locale":"cs-CS",
+			"gamble":"Hazardovat",
+			"swap":"Vyměňte",
+			"futures":"Budoucnosti",
+			"nfts":"NFTs",
+			"connectwallet":"Připojte Peněženku",
+			"languages":"Jazyky",
+			"settings":"Nastavení",
+			"more":"Více"
+		},
+		{
+			"locale":"is-IS",
+			"gamble":"Fjárhættuspil",
+			"swap":"Skipta",
+			"futures":"Framtíð",
+			"nfts":"NFTs",
+			"connectwallet":"Tengdu Veski",
+			"languages":"Tungumál",
+			"settings":"Stillingar",
+			"more":"Meira"
+		},
+		{
+			"locale":"it-IT",
+			"gamble":"Gioco D'Azzardo",
+			"swap":"Scambio",
+			"futures":"Futuri",
+			"nfts":"NFTs",
+			"connectwallet":"Collega Il Portafoglio",
+			"languages":"Le Lingue",
+			"settings":"Impostazioni",
+			"more":"Di Più"
+		},
+		{
+			"locale":"ja-JA",
+			"gamble":"ギャンブル",
+			"swap":"スワップ",
+			"futures":"先物",
+			"nfts":"NFTs",
+			"connectwallet":"ウォレットを接続する",
+			"languages":"言語",
+			"settings":"設定",
+			"more":"もっと"
+		},
+		{
+			"locale":"ko-KO",
+			"gamble":"도박",
+			"swap":"교환",
+			"futures":"선물",
+			"nfts":"NFTs",
+			"connectwallet":"지갑 연결",
+			"languages":"언어",
+			"settings":"설정",
+			"more":"더"
+		},
+		{
+			"locale":"pl-PL",
+			"gamble":"Hazard",
+			"swap":"Zamieniać",
+			"futures":"Kontrakty Terminowe",
+			"nfts":"NFTs",
+			"connectwallet":"Połącz Portfel",
+			"languages":"Języki",
+			"settings":"Ustawienia",
+			"more":"Więcej"
+		},
+		{
+			"locale":"pt-PT",
+			"gamble":"Jogar",
+			"swap":"Troca",
+			"futures":"Futuros",
+			"nfts":"NFTs",
+			"connectwallet":"Conectar Carteira",
+			"languages":"Línguas",
+			"settings":"Definições",
+			"more":"Mais"
+		},
+		{
+			"locale":"th-TH",
+			"gamble":"การพนัน",
+			"swap":"แลกเปลี่ยน",
+			"futures":"ฟิวเจอร์ส",
+			"nfts":"NFTs",
+			"connectwallet":"เชื่อมต่อกระเป๋าสตางค์",
+			"languages":"ภาษา",
+			"settings":"การตั้งค่า",
+			"more":"มากกว่า"
+		},
+		{
+			"locale":"tr-TR",
+			"gamble":"Kumar",
+			"swap":"Takas",
+			"futures":"Vadeli Işlemler",
+			"nfts":"NFTs",
+			"connectwallet":"Cüzdanı Bağla",
+			"languages":"Diller",
+			"settings":"Ayarlar",
+			"more":"Daha"
+		},
+		{
+			"locale":"uk-UK",
+			"gamble":"Азартні Iгри",
+			"swap":"Поміняти місцями",
+			"futures":"Ф'ючерси",
+			"nfts":"NFTs",
+			"connectwallet":"Підключіть гаманець",
+			"languages":"Мови",
+			"settings":"Налаштування",
+			"more":"Більше"
+		},
+		{
+			"locale":"ru-RU",
+			"gamble":"Азартная игра",
+			"swap":"Менять",
+			"futures":"Фьючерсы",
+			"nfts":"NFTs",
+			"connectwallet":"Подключить кошелек",
+			"languages":"Языки",
+			"settings":"Настройки",
+			"more":"Более"
+		}
+	]
+}
