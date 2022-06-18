@@ -10,18 +10,18 @@ const CookiesPolicyPage = () =>
 //   import(/* webpackChunkName: "GetVeBalPage" */ '@/pages/get-vebal.vue');
 const HomePage = () =>
   import(/* webpackChunkName: "HomePage" */ '@/pages/index.vue');
-// const PoolPage = () =>
-//   import(/* webpackChunkName: "PoolPage" */ '@/pages/pool/_id.vue');
-// const CreatePoolPage = () =>
-//   import(/* webpackChunkName: "CreatePoolPage" */ '@/pages/pool/create.vue');
-// const PoolInvestPage = () =>
-//   import(/* webpackChunkName: "PoolInvestPage" */ '@/pages/pool/invest.vue');
-// const MigratePoolPage = () =>
-//   import(/* webpackChunkName: "MigratePoolPage" */ '@/pages/pool/migrate.vue');
-// const PoolWithdrawPage = () =>
-//   import(
-//     /* webpackChunkName: "PoolWithdrawPage" */ '@/pages/pool/withdraw.vue'
-//   );
+const PoolPage = () =>
+  import(/* webpackChunkName: "PoolPage" */ '@/pages/pool/_id.vue');
+const CreatePoolPage = () =>
+  import(/* webpackChunkName: "CreatePoolPage" */ '@/pages/pool/create.vue');
+const PoolInvestPage = () =>
+  import(/* webpackChunkName: "PoolInvestPage" */ '@/pages/pool/invest.vue');
+const MigratePoolPage = () =>
+  import(/* webpackChunkName: "MigratePoolPage" */ '@/pages/pool/migrate.vue');
+const PoolWithdrawPage = () =>
+  import(
+    /* webpackChunkName: "PoolWithdrawPage" */ '@/pages/pool/withdraw.vue'
+  );
 const PrivacyPolicyPage = () =>
   import(
     /* webpackChunkName: "PrivacyPolicyPage" */ '@/pages/privacy-policy.vue'
@@ -74,35 +74,35 @@ const routes: RouteRecordRaw[] = [
       return `/trade${to.path.split('/swap')[1]}`;
     }
   },
-  // {
-  //   path: '/pool/create/:tx?',
-  //   name: 'create-pool',
-  //   component: CreatePoolPage,
-  //   meta: { layout: 'FocusedLayout' }
-  // },
-  // {
-  //   path: '/pool/:id',
-  //   name: 'pool',
-  //   component: PoolPage
-  // },
-  // {
-  //   path: '/pool/:id/invest',
-  //   name: 'invest',
-  //   component: PoolInvestPage,
-  //   meta: { layout: 'PoolTransferLayout' }
-  // },
-  // {
-  //   path: '/pool/:id/withdraw',
-  //   name: 'withdraw',
-  //   component: PoolWithdrawPage,
-  //   meta: { layout: 'PoolTransferLayout' }
-  // },
-  // {
-  //   path: '/pool/migrate/:from/:to',
-  //   name: 'migrate-pool',
-  //   component: MigratePoolPage,
-  //   meta: { layout: 'FocusedLayout' }
-  // },
+  {
+    path: '/pool/create/:tx?',
+    name: 'create-pool',
+    component: CreatePoolPage,
+    meta: { layout: 'FocusedLayout' }
+  },
+  {
+    path: '/pool/:id',
+    name: 'pool',
+    component: PoolPage
+  },
+  {
+    path: '/pool/:id/invest',
+    name: 'invest',
+    component: PoolInvestPage,
+    meta: { layout: 'PoolTransferLayout' }
+  },
+  {
+    path: '/pool/:id/withdraw',
+    name: 'withdraw',
+    component: PoolWithdrawPage,
+    meta: { layout: 'PoolTransferLayout' }
+  },
+  {
+    path: '/pool/migrate/:from/:to',
+    name: 'migrate-pool',
+    component: MigratePoolPage,
+    meta: { layout: 'FocusedLayout' }
+  },
   {
     path: '/terms-of-use',
     name: 'terms-of-use',
@@ -126,7 +126,6 @@ const routes: RouteRecordRaw[] = [
     name: 'not-found',
     redirect: '/'
   }
-  // },
   // {
   //   path: '/vebal',
   //   name: 'vebal',
