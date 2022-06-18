@@ -7,6 +7,7 @@ import { useStore } from 'vuex';
 // import MyWallet from '@/components/cards/MyWallet/MyWallet.vue';
 import TradeCard from '@/components/cards/TradeCard/TradeCard.vue';
 import TradeCardGP from '@/components/cards/TradeCardGP/TradeCardGP.vue';
+// import FuturesCard from '@/components/cards/TradeCard/FuturesCard.vue';
 // import TrendingPairs from '@/components/cards/TrendingPairs/TrendingPairs.vue';
 import Col3Layout from '@/components/layouts/Col3Layout.vue';
 import usePoolFilters from '@/composables/pools/usePoolFilters';

@@ -14,8 +14,6 @@ import { version } from '../../package.json';
 const ENV = process.env.VUE_APP_ENV || 'development';
 const networkMap = {
   [Network.MAINNET]: 'mainnet',
-  [Network.KOVAN]: 'kovan',
-  [Network.POLYGON]: 'polygon',
   [Network.ARBITRUM]: 'arbitrum-one'
 };
 const environment = `${ENV}-${networkMap[networkId.value]}`;
