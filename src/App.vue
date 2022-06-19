@@ -106,7 +106,7 @@ export default defineComponent({
   <div id="modal" />
   <div id="app">
     <component :is="layout" />
-    <VueQueryDevTools />
+    <!-- <VueQueryDevTools /> -->
     <WalletSelectModal
       :isVisible="isWalletSelectVisible"
       @close="toggleWalletSelectModal"

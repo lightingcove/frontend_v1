@@ -135,7 +135,7 @@ function navigateToCreatePool() {
           />
           <BalBtn
             @click="navigateToCreatePool"
-            color="blue"
+            color="red"
             size="sm"
             :class="{ 'mt-4': upToMediumBreakpoint }"
             :block="upToMediumBreakpoint"
