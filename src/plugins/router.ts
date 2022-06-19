@@ -8,8 +8,8 @@ const CookiesPolicyPage = () =>
   );
 // const GetVeBalPage = () =>
 //   import(/* webpackChunkName: "GetVeBalPage" */ '@/pages/get-vebal.vue');
-const HomePage = () =>
-  import(/* webpackChunkName: "HomePage" */ '@/pages/index.vue');
+// const InvestPage = () =>
+//   import(/* webpackChunkName: "HomePage" */ '@/pages/index.vue');
 const PoolPage = () =>
   import(/* webpackChunkName: "PoolPage" */ '@/pages/pool/_id.vue');
 const CreatePoolPage = () =>
@@ -36,6 +36,7 @@ const TradePage = () =>
 //   import(/* webpackChunkName: "VeBalPage" */ '@/pages/vebal.vue');
 const FuturesPage = () => import('@/pages/futures.vue');
 const NFTsPage = () => import('@/pages/nfts.vue');
+const GamblePage = () => import('@/pages/gamble.vue');
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -51,7 +52,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
-    component: HomePage
+    component: GamblePage
   },
   {
     path: '/futures',
