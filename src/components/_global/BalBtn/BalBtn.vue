@@ -56,7 +56,7 @@ export default defineComponent({
           'gray',
           'red',
           'white',
-          'blue'
+          'red'
         ].includes(val)
     },
     label: { type: String, default: '' },
@@ -102,12 +102,12 @@ export default defineComponent({
     const bgGradientClasses = computed(() => {
       if (props.outline) return 'bg-transparent';
 
-      let fromColor = 'blue';
+      let fromColor = 'red';
       let toColor = 'pink';
 
       if (props.color === 'gradient-reverse') {
         fromColor = 'pink';
-        toColor = 'blue';
+        toColor = 'red';
       } else if (props.color === 'gradient-pink-yellow') {
         fromColor = 'pink';
         toColor = 'yellow';

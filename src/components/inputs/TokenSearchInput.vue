@@ -110,7 +110,7 @@ function onClick() {
         <span
           v-for="token in sortedBalances"
           :key="`wallet-${token.symbol}`"
-          class="mr-6 cursor-pointer hover:text-blue-700"
+          class="mr-6 cursor-pointer hover:text-red-700"
           @click="addToken(token.address)"
         >
           {{ token?.symbol }}

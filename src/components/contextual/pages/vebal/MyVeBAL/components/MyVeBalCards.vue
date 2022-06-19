@@ -190,7 +190,7 @@ const cards = computed(() => {
           <router-link
             v-if="card.showPlusIcon"
             :to="card.plusIconTo"
-            class="text-blue-500 flex items-center"
+            class="text-red-500 flex items-center"
           >
             <BalIcon
               name="plus-circle"
@@ -237,12 +237,12 @@ const cards = computed(() => {
 .plus-circle:hover :deep(svg.feather-plus-circle),
 .plus-circle:focus :deep(svg.feather-plus-circle) {
   @apply transition-all text-white;
-  fill: #384aff; /* blue-500 */
+  fill: #384aff; /* red-500 */
 }
 
 .plus-circle:hover :deep(svg.feather-plus-circle circle),
 .plus-circle:focus :deep(svg.feather-plus-circle circle) {
-  color: #384aff; /* blue-500 */
+  color: #384aff; /* red-500 */
 }
 
 .minus-circle:hover :deep(svg.feather-minus-circle),

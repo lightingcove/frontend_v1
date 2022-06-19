@@ -243,7 +243,7 @@ watch(
               isColumnStuck ? 'isSticky' : '',
               column.sortKey ? 'cursor-pointer' : '',
               currentSortColumn === column.id && currentSortDirection
-                ? 'text-blue-400'
+                ? 'text-red-400'
                 : 'text-gray-800 dark:text-gray-100'
             ]"
             :ref="setHeaderRef(columnIndex)"

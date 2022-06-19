@@ -199,7 +199,7 @@ function navigateToPoolMigration(pool: Pool) {
       </div>
       <BalBtn
         v-if="showMigrateButton"
-        color="blue"
+        color="red"
         class="mt-4"
         block
         @click.prevent="navigateToPoolMigration(props.pool)"

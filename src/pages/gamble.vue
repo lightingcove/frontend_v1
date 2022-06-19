@@ -123,7 +123,7 @@ function navigateToCreatePool() {
     <BalStack vertical>
       <div class="px-4 lg:px-0">
         <h3 class="mb-3">{{ $t('investmentPools') }}</h3>
-        <div
+        <!--<div
           class="flex flex-col md:flex-row w-full justify-between items-end lg:items-center"
         >
           <TokenSearchInput
@@ -142,7 +142,7 @@ function navigateToCreatePool() {
           >
             {{ $t('createAPool.title') }}
           </BalBtn>
-        </div>
+        </div>-->
       </div>
       <PoolsTable
         :data="investmentPools"
@@ -157,9 +157,9 @@ function navigateToCreatePool() {
         :isLoading="isInvestmentPoolsTableLoading"
       >
       </PoolsTable>
-      <div v-if="isElementSupported" class="mt-16 p-4 lg:p-0">
+      <!-- <div v-if="isElementSupported" class="mt-16 p-4 lg:p-0">
         <FeaturedProtocols />
-      </div>
+      </div>-->
     </BalStack>
   </div>
 </template>

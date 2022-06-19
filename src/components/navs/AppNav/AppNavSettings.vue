@@ -208,7 +208,7 @@ export default defineComponent({
             color = 'yellow';
             break;
           case Network.GÖRLI:
-            color = 'blue';
+            color = 'red';
             break;
         }
       }
@@ -279,16 +279,16 @@ export default defineComponent({
 
 <style scoped>
 .address {
-  @apply text-blue-500;
+  @apply text-red-500;
   font-variant-ligatures: no-contextual;
 }
 
 .option:hover {
-  @apply text-blue-500 border-blue-500;
+  @apply text-red-500 border-red-500;
 }
 
 .option.active {
-  @apply text-blue-500 border-blue-500;
+  @apply text-red-500 border-red-500;
 }
 
 .slippage-input {
@@ -296,6 +296,6 @@ export default defineComponent({
 }
 
 .slippage-input.active {
-  @apply text-blue-500 border-blue-500;
+  @apply text-red-500 border-red-500;
 }
 </style>

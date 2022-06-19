@@ -85,7 +85,7 @@ const columns = computed<ColumnDefinition<PoolWithShares>[]>(() => [
     noGrow: true
   },
   {
-    name: t('composition'),
+    name: t('structure'),
     id: 'poolName',
     accessor: 'id',
     Cell: 'poolNameCell',

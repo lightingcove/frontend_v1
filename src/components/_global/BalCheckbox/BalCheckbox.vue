@@ -56,8 +56,8 @@ export default defineComponent({
     },
     color: {
       type: String,
-      default: 'blue',
-      validator: (val: string): boolean => ['blue'].includes(val)
+      default: 'red',
+      validator: (val: string): boolean => ['red'].includes(val)
     }
   },
 
@@ -143,7 +143,7 @@ export default defineComponent({
 }
 
 .bal-checkbox-input {
-  @apply text-blue-500 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded leading-none;
+  @apply text-red-500 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded leading-none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

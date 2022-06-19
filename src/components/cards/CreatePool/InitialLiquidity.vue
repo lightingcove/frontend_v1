@@ -232,7 +232,7 @@ function saveAndProceed() {
             <button
               v-if="!createPoolTxHash"
               @click="goBack"
-              class="text-blue-500 hover:text-blue-700 flex"
+              class="text-red-500 hover:text-red-700 flex"
             >
               <BalIcon class="flex" name="chevron-left" />
             </button>
@@ -252,7 +252,7 @@ function saveAndProceed() {
               </span>
               <button
                 @click="handleClearAll"
-                class="text-sm font-medium text-gray-400 hover:text-blue-500"
+                class="text-sm font-medium text-gray-400 hover:text-red-500"
               >
                 Clear all
               </button>
@@ -313,7 +313,7 @@ function saveAndProceed() {
                     'text-sm font-semibold3',
                     {
                       'text-gray-400 dark:text-gray-600': areAmountsMaxed,
-                      'text-blue-500 hover:text-blue-50': !areAmountsMaxed
+                      'text-red-500 hover:text-red-50': !areAmountsMaxed
                     }
                   ]"
                   @click="handleMax"
@@ -334,7 +334,7 @@ function saveAndProceed() {
               >
                 <button
                   @click="optimiseLiquidity(true)"
-                  class="bg-clip-text text-sm text-transparent font-medium bg-gradient-to-tr from-blue-500 to-pink-500  hover:from-blue-800 hover:to-pink-800"
+                  class="bg-clip-text text-sm text-transparent font-medium bg-gradient-to-tr from-red-500 to-pink-500  hover:from-red-800 hover:to-pink-800"
                 >
                   {{ t('optimize') }}
                 </button>

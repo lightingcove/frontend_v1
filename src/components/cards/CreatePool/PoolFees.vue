@@ -48,7 +48,7 @@ const { userNetworkConfig } = useWeb3();
  * COMPUTED
  */
 const customInputClasses = computed(() => ({
-  'border border-blue-500 text-blue-500': isCustomFee.value,
+  'border border-red-500 text-red-500': isCustomFee.value,
   'border dark:border-gray-900': !isCustomFee.value
 }));
 
@@ -146,7 +146,7 @@ async function onChangeFeeController(val: string) {
           <BalStack horizontal align="center" spacing="xs">
             <button
               @click="goBack"
-              class="text-blue-500 hover:text-blue-700 flex"
+              class="text-red-500 hover:text-red-700 flex"
             >
               <BalIcon class="flex" name="chevron-left" />
             </button>

@@ -60,7 +60,7 @@ function cancel() {
         <BalStack align="center" horizontal spacing="xs">
           <button
             @click="goBack"
-            class="text-blue-500 hover:text-blue-700 flex"
+            class="text-red-500 hover:text-red-700 flex"
           >
             <BalIcon class="flex" name="chevron-left" />
           </button>

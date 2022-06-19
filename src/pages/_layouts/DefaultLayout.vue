@@ -37,7 +37,7 @@ import AppNav from '@/components/navs/AppNav/AppNav.vue';
       id="intercom-activator"
       circle
       size="lg"
-      color="blue"
+      color="red"
       class="fixed bottom-0 right-0 m-4 z-100"
     >
       <BalIcon name="message-square" size="lg" />

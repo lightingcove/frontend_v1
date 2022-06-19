@@ -266,7 +266,7 @@ watchEffect(() => {
             </span>
 
             <template v-if="hasBalance && !noMax && !disableMax">
-              <span v-if="!isMaxed" class="text-blue-500">
+              <span v-if="!isMaxed" class="text-red-500">
                 {{ $t('max') }}
               </span>
               <span v-else class="text-gray-400 dark:text-gray-600 lowercase">
@@ -285,7 +285,7 @@ watchEffect(() => {
             </template>
             <template v-else-if="hint">
               <span
-                class="text-blue-500 lowercase cursor-pointer"
+                class="text-red-500 lowercase cursor-pointer"
                 @click="emit('update:amount', hintAmount)"
               >
                 {{ hint }}

@@ -50,7 +50,7 @@ const steps = computed(() => [
         <h6>
           {{ $t('getVeBAL.howToLock.title') }}
         </h6>
-        <BalIcon name="chevron-down" class="text-blue-500" />
+        <BalIcon name="chevron-down" class="text-red-500" />
       </button>
     </template>
     <template v-slot:how-to-lock>

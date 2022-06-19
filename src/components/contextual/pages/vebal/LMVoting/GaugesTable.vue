@@ -218,10 +218,10 @@ function redirectToPool(gauge: VotingGaugeWithVotes) {
       <template v-slot:voteColumnCell="gauge">
         <div v-if="isWalletReady" class="px-4">
           <BalBtn
-            color="blue"
+            color="red"
             :outline="true"
             size="sm"
-            class="hover:text-white hover:bg-blue-500 focus:text-white focus:bg-blue-500"
+            class="hover:text-white hover:bg-red-500 focus:text-white focus:bg-red-500"
             flat
             block
             @click.stop="emit('clickedVote', gauge)"

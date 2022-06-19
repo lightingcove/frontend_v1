@@ -31,7 +31,7 @@ const visibleSteps = computed(() => {
 const stepTextClasses = computed(() => {
   return visibleSteps.value.map(step => {
     return getActiveClassName(step.state, [
-      [StepState.Active, 'text-blue-400 font-semibold hover:text-blue-800'],
+      [StepState.Active, 'text-red-400 font-semibold hover:text-red-800'],
       [StepState.Todo, 'text-gray-400 font-normal'],
       [StepState.Success, 'text-green-500 font-semibold'],
       [StepState.Warning, 'text-red-500 font-semibold'],
@@ -45,7 +45,7 @@ const stepCircleClasses = computed(() => {
     return getActiveClassName(step.state, [
       [
         StepState.Active,
-        'border-2 border-none bg-gradient-from-l bg-gradient-to-r from-blue-600 to-blue-50 text-white active'
+        'border-2 border-none bg-gradient-from-l bg-gradient-to-r from-red-600 to-red-50 text-white active'
       ],
       [
         StepState.Todo,

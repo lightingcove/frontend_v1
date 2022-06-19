@@ -134,7 +134,7 @@ async function handleActionSuccess() {
                 spacing="sm"
                 align="center"
               >
-                <BalIcon name="chevron-down" class="text-blue-500" />
+                <BalIcon name="chevron-down" class="text-red-500" />
               </BalStack>
             </BalStack>
           </button>

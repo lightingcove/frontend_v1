@@ -84,7 +84,7 @@ withDefaults(defineProps<Props>(), {
 }
 
 .pill-selected::before {
-  @apply ring-2 ring-blue-500 dark:ring-blue-400;
+  @apply ring-2 ring-red-500 dark:ring-red-400;
 }
 
 .balance-indicator {

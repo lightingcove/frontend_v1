@@ -86,7 +86,7 @@
               <div
                 :class="[
                   'pr-2 cursor-pointer font-medium',
-                  { 'text-blue-600': !showSummaryInFiat }
+                  { 'text-red-600': !showSummaryInFiat }
                 ]"
                 @click="showSummaryInFiat = false"
               >
@@ -95,7 +95,7 @@
               <div
                 :class="[
                   'pl-2 cursor-pointer font-medium uppercase',
-                  { 'text-blue-600': showSummaryInFiat }
+                  { 'text-red-600': showSummaryInFiat }
                 ]"
                 @click="showSummaryInFiat = true"
               >

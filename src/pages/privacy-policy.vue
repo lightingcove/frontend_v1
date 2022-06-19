@@ -255,7 +255,7 @@
         UI. For more information about cookies and how to disable them, see our
 
         <router-link :to="{ name: 'cookies-policy' }">
-          <span className="text-blue-500 hover:text-blue-800 transition-colors"
+          <span className="text-red-500 hover:text-red-800 transition-colors"
             >Cookies Policy</span
           > </router-link
         >.
