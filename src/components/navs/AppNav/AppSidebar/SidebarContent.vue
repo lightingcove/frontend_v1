@@ -4,8 +4,6 @@ import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 
 import AppLogo from '@/components/images/AppLogo.vue';
-// import useApp from '@/composables/useApp';
-import useConfig from '@/composables/useConfig';
 import useDarkMode from '@/composables/useDarkMode';
 import { sleep } from '@/lib/utils';
 import useWeb3 from '@/services/web3/useWeb3';
@@ -20,8 +18,6 @@ const emit = defineEmits(['close']);
  */
 const { darkMode, toggleDarkMode } = useDarkMode();
 const { blockNumber } = useWeb3();
-const { networkConfig } = useConfig();
-// const { version } = useApp();
 const { t } = useI18n();
 const router = useRouter();
 
@@ -124,18 +120,6 @@ watch(blockNumber, async () => {
       <BalLink href="mailto:lightingcove@gmail.com" class="social-link" noStyle>
         <EmailIcon />
       </BalLink>
-    </div>
-
-    <div class="mt-6 px-4 text-xs">
-      <div class="flex items-center">
-        <div
-          ref="blockIcon"
-          class="block-icon w-2 h-2 rounded-full bg-green-500"
-        />
-        <span class="ml-2 text-gray-300">
-          {{ networkConfig.name }}: Block {{ blockNumber }}
-        </span>
-      </div>
     </div>
   </div>
 </template>

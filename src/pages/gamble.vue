@@ -1,27 +1,21 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { useRouter } from 'vue-router';
 
-import StakedPoolsTable from '@/components/contextual/pages/pools/StakedPoolsTable.vue';
-import UnstakedPoolsTable from '@/components/contextual/pages/pools/UnstakedPoolsTable.vue';
 import TokenSearchInput from '@/components/inputs/TokenSearchInput.vue';
-import FeaturedProtocols from '@/components/sections/FeaturedProtocols.vue';
 import PoolsTable from '@/components/tables/PoolsTable/PoolsTable.vue';
 import usePoolFilters from '@/composables/pools/usePoolFilters';
 import usePools from '@/composables/pools/usePools';
 import useStreamedPoolsQuery from '@/composables/queries/useStreamedPoolsQuery';
 import useAlerts, { AlertPriority, AlertType } from '@/composables/useAlerts';
-import useBreakpoints from '@/composables/useBreakpoints';
 import { isMigratablePool } from '@/composables/usePool';
 import useTokens from '@/composables/useTokens';
 import { MIN_FIAT_VALUE_POOL_MIGRATION } from '@/constants/pools';
 import { bnum } from '@/lib/utils';
-import StakingProvider from '@/providers/local/staking/staking.provider';
+
 import useWeb3 from '@/services/web3/useWeb3';
 
 // COMPOSABLES
-const router = useRouter();
 const { t } = useI18n();
 const { isWalletReady, appNetworkConfig, isWalletConnecting } = useWeb3();
 const isElementSupported = appNetworkConfig.supportsElementPools;
@@ -41,7 +35,7 @@ const {
   isLoadingMore
 } = useStreamedPoolsQuery(selectedTokens);
 const { addAlert, removeAlert } = useAlerts();
-const { upToMediumBreakpoint } = useBreakpoints();
+
 const { priceQueryLoading } = useTokens();
 
 // COMPUTED
@@ -72,21 +66,11 @@ watch(poolsQuery.error, () => {
   }
 });
 
-const migratableUserPools = computed(() => {
-  return userPools.value.filter(pool => isMigratablePool(pool));
-});
-
 const isInvestmentPoolsTableLoading = computed(
   () => dataStates['basic'] === 'loading' || priceQueryLoading.value
 );
 
 watch(showMigrationColumn, () => console.log(showMigrationColumn.value));
-/**
- * METHODS
- */
-function navigateToCreatePool() {
-  router.push({ name: 'create-pool' });
-}
 </script>
 
 <template>
