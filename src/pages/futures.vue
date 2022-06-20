@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Col3Layout offsetGutters mobileHideGutters class="mt-8">
+  <Col3Layout offsetGutters mobileHideGutters class="mt-12">
     <BalLoadingBlock v-if="appLoading" class="h-96" />
     <template v-else>
       <template v-if="ENABLE_LEGACY_TRADE_INTERFACE">

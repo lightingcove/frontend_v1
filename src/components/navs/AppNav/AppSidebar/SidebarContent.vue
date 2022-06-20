@@ -4,9 +4,9 @@ import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 
 import AppLogo from '@/components/images/AppLogo.vue';
-import useDarkMode from '@/composables/useDarkMode';
 import { sleep } from '@/lib/utils';
 import useWeb3 from '@/services/web3/useWeb3';
+import useDarkMode from '@/composables/useDarkMode';
 
 /**
  * PROPS & EMITS
@@ -67,7 +67,7 @@ watch(blockNumber, async () => {
 <template>
   <div class="opacity-0 fade-in-delay">
     <div
-      class="h-20 px-4 border-b border-gray-800 flex flex-col justify-center"
+      class="h-20 px-4 border-b border-white-800 flex flex-col justify-center"
     >
       <AppLogo forceDark />
     </div>
@@ -84,7 +84,7 @@ watch(blockNumber, async () => {
     </div>
 
     <div class="grid grid-col-1 text-sm mt-5">
-      <span class="text-gray-500 px-4 pb-1 font-medium">Ecosystem</span>
+      <span class="text-white-500 px-4 pb-1 font-medium">Ecosystem</span>
       <BalLink
         v-for="link in ecosystemLinks"
         :key="link.url"
