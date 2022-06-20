@@ -91,58 +91,9 @@ function navigateToCreatePool() {
 
 <template>
   <div class="lg:container lg:mx-auto pt-10 md:pt-12">
-    <template v-if="isWalletReady || isWalletConnecting">
-      <BalStack vertical>
-        <div class="px-4 lg:px-0">
-          <BalStack horizontal justify="between" align="center">
-            <h3>{{ $t('myInvestments') }}</h3>
-          </BalStack>
-        </div>
-        <BalStack vertical spacing="xl">
-          <StakingProvider>
-            <UnstakedPoolsTable :userPools="userPools" />
-            <StakedPoolsTable :userPools="userPools" />
-          </StakingProvider>
-          <BalStack vertical spacing="sm" v-if="migratableUserPools.length > 0">
-            <h5 class="px-4 lg:px-0">{{ $t('poolsToMigrate') }}</h5>
-            <PoolsTable
-              :key="migratableUserPools"
-              :isLoading="isLoadingUserPools"
-              :data="migratableUserPools"
-              :noPoolsLabel="$t('noInvestments')"
-              showPoolShares
-              :selectedTokens="selectedTokens"
-              :hiddenColumns="['poolVolume', 'poolValue', 'stake']"
-            />
-          </BalStack>
-        </BalStack>
-      </BalStack>
-      <div class="mb-16" />
-    </template>
-
     <BalStack vertical>
       <div class="px-4 lg:px-0">
         <h3 class="mb-3">{{ $t('investmentPools') }}</h3>
-        <!--<div
-          class="flex flex-col md:flex-row w-full justify-between items-end lg:items-center"
-        >
-          <TokenSearchInput
-            v-model="selectedTokens"
-            :loading="isLoadingPools"
-            @add="addSelectedToken"
-            @remove="removeSelectedToken"
-            class="w-full md:w-2/3"
-          />
-          <BalBtn
-            @click="navigateToCreatePool"
-            color="red"
-            size="sm"
-            :class="{ 'mt-4': upToMediumBreakpoint }"
-            :block="upToMediumBreakpoint"
-          >
-            {{ $t('createAPool.title') }}
-          </BalBtn>
-        </div>-->
       </div>
       <PoolsTable
         :data="investmentPools"
@@ -157,9 +108,6 @@ function navigateToCreatePool() {
         :isLoading="isInvestmentPoolsTableLoading"
       >
       </PoolsTable>
-      <!-- <div v-if="isElementSupported" class="mt-16 p-4 lg:p-0">
-        <FeaturedProtocols />
-      </div>-->
     </BalStack>
   </div>
 </template>
