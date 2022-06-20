@@ -24,7 +24,6 @@ const classes = computed(() => ({
 <style scoped>
 .desktop-link-item {
   @apply transition ease-in-out duration-500;
-  @apply border-t-4 hover:border-red-500;
   @apply h-full flex flex-col justify-center;
   @apply cursor-pointer hover:text-red-500;
 }

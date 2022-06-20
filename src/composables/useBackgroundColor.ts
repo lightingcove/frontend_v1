@@ -16,8 +16,8 @@ import useDarkMode from '@/composables/useDarkMode';
 /**
  * CONSTANTS
  */
-const defaultBgColor = 'bg-white';
-const defaultDarkBgColor = 'bg-green-400';
+const defaultBgColor = 'bg-green-100';
+const defaultDarkBgColor = 'bg-green-500';
 
 /**
  * STATE
