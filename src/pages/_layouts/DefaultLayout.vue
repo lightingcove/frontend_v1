@@ -22,26 +22,9 @@ import AppNav from '@/components/navs/AppNav/AppNav.vue';
 <template>
   <div>
     <AppNav />
-    <!--
-    <template v-if="isHomePage">
-      <StakingProvider>
-        <AppHero />
-      </StakingProvider>
-    </template>
-    -->
     <div class="pb-16">
       <router-view :key="$route.path" />
     </div>
-    <!--<BalBtn
-      v-if="isDesktop"
-      id="intercom-activator"
-      circle
-      size="lg"
-      color="red"
-      class="fixed bottom-0 right-0 m-4 z-100"
-    >
-      <BalIcon name="message-square" size="lg" />
-    </BalBtn>-->
   </div>
 </template>
 

@@ -67,7 +67,7 @@ watch(blockNumber, async () => {
 <template>
   <div class="opacity-0 fade-in-delay">
     <div
-      class="h-20 px-4 border-b border-white-800 flex flex-col justify-center"
+      class="h-20 px-4 border-b border-gray-800 flex flex-col justify-center"
     >
       <AppLogo forceDark />
     </div>

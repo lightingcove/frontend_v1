@@ -1,9 +1,5 @@
 <template>
-  <BalCard
-    class="relative card-container bg-red-900"
-    :shadow="tradeCardShadow"
-    no-border
-  >
+  <BalCard class="relative card-container" :shadow="tradeCardShadow" no-border>
     <template v-slot:header>
       <div class="w-full flex items-center justify-between">
         <h4 class="font-bold">{{ title }}</h4>
@@ -64,7 +60,7 @@
         block
         @click.prevent="handlePreviewButton"
       />
-      <div
+      <!--<div
         v-if="
           !ENABLE_LEGACY_TRADE_INTERFACE &&
             trading.isGnosisSupportedOnNetwork.value
@@ -137,7 +133,7 @@
             </div>
           </div>
         </Transition>
-      </div>
+      </div> -->
       <TradeRoute
         v-if="alwaysShowRoutes"
         :address-in="trading.tokenIn.value.address"

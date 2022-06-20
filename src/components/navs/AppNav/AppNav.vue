@@ -51,7 +51,7 @@ onUnmounted(() => {
 <template>
   <AppNavAlert v-if="currentAlert" :alert="currentAlert" />
   <nav id="app-nav" ref="appNav" class="h-20 pl-4 pr-1 lg:px-6 sticky top-0">
-    <div class="h-full flex items-center justify-between">
+    <div class="h-full flex items-center justify-between bg-green-700">
       <div class="flex items-center h-full">
         <router-link
           :to="{ name: 'home' }"
