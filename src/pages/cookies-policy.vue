@@ -24,8 +24,8 @@
 
       <p>
         We do not generally use cookies. We do not intentionally collect
-        information to customize your experience on the website or the Balancer
-        Labs user interface (UI) to the Balancer Protocol. (“Sites” or “Site”).
+        information to customize your experience on the website or the Lighting Cove
+        user interface (UI) to the Lighting Cove Protocol. (“Sites” or “Site”).
       </p>
       <p>
         Industry standards are currently evolving, and we may not separately
