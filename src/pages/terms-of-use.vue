@@ -24,10 +24,10 @@
       <p>
         This Lighting Cove OU Terms of Use agreement (“Terms” or “agreement”)
         (“Lighting Cove”, “we” and “us” refers to Lighting Cove OU) covers the
-        website, Balancer Protocol user-interface and free application
+        website, Lighting Cove user-interface and free application
         (collectively “the Site”) we own and administer, at times in conjunction
         with others, which provides the ability to access the decentralized
-        Balancer Protocol. Additionally, you can access the Balancer Protocol
+        Lighting Cove. Additionally, you can access the Lighting Cove
         through third-party web or mobile interfaces. These Terms apply to you
         (“You” or “you”) as a user of our Site including all the products,
         services, tools and information, without limitation, made available on
@@ -74,26 +74,26 @@
       <h2>2. Site</h2>
       <p>
         As part of the Site, Lighting Cove provides access to a decentralized
-        finance application (“Application” or “Balancer Protocol app”) on the
+        finance application (“Application” or “Lighting Cove app”) on the
         Ethereum blockchain, that allows traders or liquidity providers of
         Ethereum assets (“Cryptocurrency Assets”) to transact using smart
-        contracts (“Smart Contracts”). Use of the Balancer Protocol may require
+        contracts (“Smart Contracts”). Use of the Lighting Cove may require
         that you pay a fee, such as gas charges on the Ethereum network to
         perform a transaction. You acknowledge and agree that Lighting Cove has
         no control over any activities, transactions, the method of payment of
         any transactions, or any actual processing of payments of transactions.
         You must ensure that you have a sufficient balance to complete any
-        transaction on the Balancer Protocol before initiating such transaction.
+        transaction on the Lighting Cove before initiating such transaction.
       </p>
       <p>
         You acknowledge and agree that Lighting Cove has no control over any
-        transactions conducted through the Balancer Protocol, the method of
+        transactions conducted through the Lighting Cove, the method of
         payment of any transactions or any actual payments of transactions
         including use of any third-party services such as Metamask, or other
         wallet services. Likewise, you must ensure that you have a sufficient
         balance of the applicable cryptocurrency tokens stored at your Balancer
         Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete
-        any transaction on the Balancer Protocol or the Ethereum network before
+        any transaction on the Lighting Cove or the Ethereum network before
         initiating such transaction.
       </p>
     </div>
@@ -186,7 +186,7 @@
         <li>
           Use the Site in any manner that could interfere with, disrupt,
           negatively affect, redirect or inhibit other users from fully enjoying
-          the Site or the Balancer Protocol, or that could damage, disable,
+          the Site or the Lighting Cove, or that could damage, disable,
           overburden, or impair the functioning of the Site or the Balancer
           Protocol in any manner;
         </li>
@@ -245,7 +245,7 @@
           others in the market.
         </li>
         <li>
-          Risks associated with accessing the Balancer Protocol through third
+          Risks associated with accessing the Lighting Cove through third
           party web or mobile interfaces. You are responsible for doing your own
           diligence on those interfaces to understand and accept the risks that
           use entails. You are also responsible for doing your own diligence on
@@ -330,11 +330,11 @@
         </li>
         <li>
           upgrades and modifications to the protocol are managed in a
-          community-driven way by holders of the Balancer Protocol governance
+          community-driven way by holders of the Lighting Cove governance
           token. No developer or entity involved in creating the Balancer
           Protocol will be liable for any claims or damages whatsoever
           associated with your use, inability to use, or your interaction with
-          other users of, the Balancer Protocol, including any direct, indirect,
+          other users of, the Lighting Cove, including any direct, indirect,
           incidental, special, exemplary, punitive or consequential damages, or
           loss of profits, cryptocurrencies, tokens, or anything else of value.
         </li>
@@ -526,7 +526,7 @@
         three; the seat of the arbitration shall be determined by the
         arbitrator(s); the arbitral proceedings shall be conducted in English.
         The applicable law shall be Estonian law or another choice of law
-        determined in Balancer Lab’s sole discretion.
+        determined in Lighting Cove’s sole discretion.
       </p>
       <p>
         With respect to all persons and entities, regardless of whether they

@@ -4,7 +4,6 @@ import { computed, onMounted, ref } from 'vue';
 import { useStore } from 'vuex';
 
 // Components
-import MyWallet from '@/components/cards/MyWallet/MyWallet.vue';
 import PairPriceGraph from '@/components/cards/PairPriceGraph/PairPriceGraph.vue';
 import TradeCard from '@/components/cards/TradeCard/TradeCard.vue';
 import TradeCardGP from '@/components/cards/TradeCardGP/TradeCardGP.vue';
@@ -12,7 +11,6 @@ import TrendingPairs from '@/components/cards/TrendingPairs/TrendingPairs.vue';
 import Col3Layout from '@/components/layouts/Col3Layout.vue';
 import usePoolFilters from '@/composables/pools/usePoolFilters';
 import { ENABLE_LEGACY_TRADE_INTERFACE } from '@/composables/trade/constants';
-import useBreakpoints from '@/composables/useBreakpoints';
 // Types
 import { TradeInterface } from '@/store/modules/app';
 
@@ -26,7 +24,6 @@ const showPriceGraphModal = ref(false);
  */
 const store = useStore();
 const { setSelectedTokens } = usePoolFilters();
-const { upToLargeBreakpoint } = useBreakpoints();
 
 /**
  * COMPUTED
@@ -57,7 +54,6 @@ onMounted(() => {
 <template>
   <Col3Layout offsetGutters mobileHideGutters class="mt-8">
     <template #gutterLeft>
-      <MyWallet />
       <TrendingPairs class="mt-4" />
     </template>
 
@@ -71,27 +67,6 @@ onMounted(() => {
         <TradeCardGP />
       </template>
     </template>
-    <div class="mt-8 p-4 sm:p-0 lg:p-0">
-      <BalAccordion
-        class="w-full"
-        v-if="upToLargeBreakpoint"
-        :sections="[
-          { title: 'My wallet', id: 'my-wallet' },
-          { title: 'Trending pairs', id: 'trending-pairs' },
-          { title: 'Price chart', id: 'price-chart' }
-        ]"
-      >
-        <template v-slot:my-wallet>
-          <MyWallet />
-        </template>
-        <template v-slot:trending-pairs>
-          <TrendingPairs />
-        </template>
-        <template v-slot:price-chart>
-          <PairPriceGraph :toggleModal="togglePairPriceGraphModal" />
-        </template>
-      </BalAccordion>
-    </div>
 
     <template #gutterRight>
       <PairPriceGraph :toggleModal="togglePairPriceGraphModal" />
