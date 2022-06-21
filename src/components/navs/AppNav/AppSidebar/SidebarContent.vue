@@ -27,10 +27,10 @@ const router = useRouter();
 const blockIcon = ref<HTMLDivElement>();
 
 const navLinks = [
-  { label: t('gamble'), path: '/' },
-  { label: t('swap'), path: '/swap' },
-  { label: t('futures'), path: '/futures' },
-  { label: t('nfts'), path: '/nfts' }
+  { label: t('gamble'), path: '/' }
+  // { label: t('swap'), path: '/swap' },
+  // { label: t('futures'), path: '/futures' },
+  // { label: t('nfts'), path: '/nfts' }
 ];
 
 const ecosystemLinks = [

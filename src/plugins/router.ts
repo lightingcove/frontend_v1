@@ -28,14 +28,14 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 //   );
 // const TermsOfUsePage = () =>
 //   import(/* webpackChunkName: "TermsOfUsePage" */ '@/pages/terms-of-use.vue');
-const TradePage = () =>
-  import(/* webpackChunkName: "TradePage" */ '@/pages/swap.vue');
+// const TradePage = () =>
+//   import(/* webpackChunkName: "TradePage" */ '@/pages/swap.vue');
 // const UnlockVeBalPage = () =>
 //   import(/* webpackChunkName: "UnlockVeBalPage" */ '@/pages/unlock-vebal.vue');
 // const VeBalPage = () =>
 //   import(/* webpackChunkName: "VeBalPage" */ '@/pages/vebal.vue');
-const FuturesPage = () => import('@/pages/futures.vue');
-const NFTsPage = () => import('@/pages/nfts.vue');
+// const FuturesPage = () => import('@/pages/futures.vue');
+// const NFTsPage = () => import('@/pages/nfts.vue');
 const GamblePage = () => import('@/pages/gamble.vue');
 
 declare module 'vue-router' {
@@ -54,27 +54,27 @@ const routes: RouteRecordRaw[] = [
     name: 'home',
     component: GamblePage
   },
-  {
-    path: '/futures',
-    name: 'futures',
-    component: FuturesPage
-  },
-  {
-    path: '/nfts',
-    name: 'nfts',
-    component: NFTsPage
-  },
-  {
-    path: '/trade/:assetIn?/:assetOut?',
-    name: 'swap',
-    component: TradePage
-  },
-  {
-    path: '/swap/:assetIn?/:assetOut?',
-    redirect: to => {
-      return `/trade${to.path.split('/swap')[1]}`;
-    }
-  },
+  // {
+  //   path: '/futures',
+  //   name: 'futures',
+  //   component: FuturesPage
+  // },
+  // {
+  //   path: '/nfts',
+  //   name: 'nfts',
+  //   component: NFTsPage
+  // },
+  // {
+  //   path: '/trade/:assetIn?/:assetOut?',
+  //   name: 'swap',
+  //   component: TradePage
+  // },
+  // {
+  //   path: '/swap/:assetIn?/:assetOut?',
+  //   redirect: to => {
+  //     return `/trade${to.path.split('/swap')[1]}`;
+  //   }
+  // },
   // {
   //   path: '/pool/create/:tx?',
   //   name: 'create-pool',

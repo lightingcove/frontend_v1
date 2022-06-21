@@ -26,7 +26,7 @@ const getTrendingTradePairs = async () => {
     where: {
       timestamp_gte: getUnixTime(new Date().setUTCHours(0, 0, 0, 0))
     },
-    first: 6
+    first: 8
   });
 };
 

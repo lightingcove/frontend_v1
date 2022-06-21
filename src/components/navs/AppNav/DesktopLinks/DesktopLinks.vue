@@ -22,7 +22,7 @@ function isActive(page: string): boolean {
     <DesktopLinkItem to="/" :active="isActive('home')">
       {{ $t('gamble') }}
     </DesktopLinkItem>
-    <DesktopLinkItem to="/trade" :active="isActive('trade')">
+    <!--<DesktopLinkItem to="/trade" :active="isActive('trade')">
       {{ $t('swap') }}
     </DesktopLinkItem>
     <DesktopLinkItem to="/futures" :active="isActive('futures')">
@@ -30,7 +30,7 @@ function isActive(page: string): boolean {
     </DesktopLinkItem>
     <DesktopLinkItem to="/nfts" :active="isActive('nfts')">
       {{ $t('nfts') }}
-    </DesktopLinkItem>
+    </DesktopLinkItem>-->
   </div>
 </template>
 
