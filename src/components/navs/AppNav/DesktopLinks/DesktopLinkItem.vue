@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const classes = computed(() => ({
   'border-white dark:border-gray-900': !props.active,
-  'border-red-500 text-red-500': props.active
+  'border-gray-500 text-white-500': props.active
 }));
 </script>
 
@@ -25,6 +25,6 @@ const classes = computed(() => ({
 .desktop-link-item {
   @apply transition ease-in-out duration-500;
   @apply h-full flex flex-col justify-center;
-  @apply cursor-pointer hover:text-red-500;
+  @apply cursor-pointer hover:text-gray-500;
 }
 </style>
